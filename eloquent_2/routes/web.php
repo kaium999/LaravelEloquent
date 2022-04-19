@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('user',"App\Http\Controllers\userController@user");
+Route::get('userview',"App\Http\Controllers\userController@userview");
+Route::get('userinput',"App\Http\Controllers\userController@userinput");
+Route::post('insert',"App\Http\Controllers\userController@userinsert");
+Route::get('delete/{id}',"App\Http\Controllers\userController@userdelete");
+Route::get('edit/{id}',"App\Http\Controllers\userController@editShow");
+Route::post('edit',"App\Http\Controllers\userController@updateEmployee");

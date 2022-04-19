@@ -45,7 +45,7 @@ class userController extends Controller
     }
     function deleteemployee($id){
         $data=employee::find($id);
-        $data->company->delete();
+        $data->delete();
         return redirect('userView');
         echo"Delete succsssfully";
     }
