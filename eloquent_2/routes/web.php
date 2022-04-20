@@ -22,3 +22,7 @@ Route::post('insert',"App\Http\Controllers\userController@userinsert");
 Route::get('delete/{id}',"App\Http\Controllers\userController@userdelete");
 Route::get('edit/{id}',"App\Http\Controllers\userController@editShow");
 Route::post('edit',"App\Http\Controllers\userController@updateEmployee");
+
+    /*One to Many*/
+Route::get('show',"App\Http\Controllers\PostController@showpost");
+Route::get('delete/{id}',"App\Http\Controllers\PostController@deleteComment");
